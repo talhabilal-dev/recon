@@ -1,0 +1,149 @@
+{
+  "type": "diff",
+  "version": "9",
+  "dialect": "postgres",
+  "id": "8282fec9-51e4-41e3-aeae-813fd3aeac8a",
+  "prevIds": [
+    "6d90bb5f-d0d1-40a1-ad6f-a4308029505c"
+  ],
+  "footprints": [
+    {
+      "statementType": "add_column",
+      "statementTarget": [
+        "column",
+        "public",
+        "reports",
+        "run_id"
+      ],
+      "writes": [
+        "s|col|public.reports.run_id",
+        "n|col|public.reports.run_id",
+        "e|col|public.reports.run_id"
+      ],
+      "reads": [
+        "n|tbl|public.reports",
+        "n|sch|public"
+      ]
+    },
+    {
+      "statementType": "add_column",
+      "statementTarget": [
+        "column",
+        "public",
+        "reports",
+        "pdf_status"
+      ],
+      "writes": [
+        "s|col|public.reports.pdf_status",
+        "n|col|public.reports.pdf_status",
+        "e|col|public.reports.pdf_status"
+      ],
+      "reads": [
+        "n|tbl|public.reports",
+        "n|sch|public"
+      ]
+    },
+    {
+      "statementType": "add_column",
+      "statementTarget": [
+        "column",
+        "public",
+        "reports",
+        "pdf_path"
+      ],
+      "writes": [
+        "s|col|public.reports.pdf_path",
+        "n|col|public.reports.pdf_path",
+        "e|col|public.reports.pdf_path"
+      ],
+      "reads": [
+        "n|tbl|public.reports",
+        "n|sch|public"
+      ]
+    },
+    {
+      "statementType": "add_column",
+      "statementTarget": [
+        "column",
+        "public",
+        "reports",
+        "pdf_error"
+      ],
+      "writes": [
+        "s|col|public.reports.pdf_error",
+        "n|col|public.reports.pdf_error",
+        "e|col|public.reports.pdf_error"
+      ],
+      "reads": [
+        "n|tbl|public.reports",
+        "n|sch|public"
+      ]
+    }
+  ],
+  "deltas": [
+    {
+      "op": "create",
+      "row": {
+        "schema": "public",
+        "table": "reports",
+        "name": "run_id",
+        "type": "integer",
+        "typeSchema": null,
+        "notNull": false,
+        "dimensions": 0,
+        "default": null,
+        "generated": null,
+        "identity": null,
+        "entityType": "columns"
+      }
+    },
+    {
+      "op": "create",
+      "row": {
+        "schema": "public",
+        "table": "reports",
+        "name": "pdf_status",
+        "type": "text",
+        "typeSchema": null,
+        "notNull": true,
+        "dimensions": 0,
+        "default": "'pending'",
+        "generated": null,
+        "identity": null,
+        "entityType": "columns"
+      }
+    },
+    {
+      "op": "create",
+      "row": {
+        "schema": "public",
+        "table": "reports",
+        "name": "pdf_path",
+        "type": "text",
+        "typeSchema": null,
+        "notNull": false,
+        "dimensions": 0,
+        "default": null,
+        "generated": null,
+        "identity": null,
+        "entityType": "columns"
+      }
+    },
+    {
+      "op": "create",
+      "row": {
+        "schema": "public",
+        "table": "reports",
+        "name": "pdf_error",
+        "type": "text",
+        "typeSchema": null,
+        "notNull": false,
+        "dimensions": 0,
+        "default": null,
+        "generated": null,
+        "identity": null,
+        "entityType": "columns"
+      }
+    }
+  ]
+}

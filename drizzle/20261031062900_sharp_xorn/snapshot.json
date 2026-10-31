@@ -1,0 +1,115 @@
+{
+  "type": "diff",
+  "version": "9",
+  "dialect": "postgres",
+  "id": "6d90bb5f-d0d1-40a1-ad6f-a4308029505c",
+  "prevIds": [
+    "d46a3891-7497-499e-893a-e953caf74b46"
+  ],
+  "footprints": [
+    {
+      "statementType": "add_column",
+      "statementTarget": [
+        "column",
+        "public",
+        "agent_runs",
+        "duration_ms"
+      ],
+      "writes": [
+        "s|col|public.agent_runs.duration_ms",
+        "n|col|public.agent_runs.duration_ms",
+        "e|col|public.agent_runs.duration_ms"
+      ],
+      "reads": [
+        "n|tbl|public.agent_runs",
+        "n|sch|public"
+      ]
+    },
+    {
+      "statementType": "add_column",
+      "statementTarget": [
+        "column",
+        "public",
+        "agent_runs",
+        "total_tokens"
+      ],
+      "writes": [
+        "s|col|public.agent_runs.total_tokens",
+        "n|col|public.agent_runs.total_tokens",
+        "e|col|public.agent_runs.total_tokens"
+      ],
+      "reads": [
+        "n|tbl|public.agent_runs",
+        "n|sch|public"
+      ]
+    },
+    {
+      "statementType": "add_column",
+      "statementTarget": [
+        "column",
+        "public",
+        "agent_runs",
+        "error"
+      ],
+      "writes": [
+        "s|col|public.agent_runs.error",
+        "n|col|public.agent_runs.error",
+        "e|col|public.agent_runs.error"
+      ],
+      "reads": [
+        "n|tbl|public.agent_runs",
+        "n|sch|public"
+      ]
+    }
+  ],
+  "deltas": [
+    {
+      "op": "create",
+      "row": {
+        "schema": "public",
+        "table": "agent_runs",
+        "name": "duration_ms",
+        "type": "integer",
+        "typeSchema": null,
+        "notNull": false,
+        "dimensions": 0,
+        "default": null,
+        "generated": null,
+        "identity": null,
+        "entityType": "columns"
+      }
+    },
+    {
+      "op": "create",
+      "row": {
+        "schema": "public",
+        "table": "agent_runs",
+        "name": "total_tokens",
+        "type": "integer",
+        "typeSchema": null,
+        "notNull": false,
+        "dimensions": 0,
+        "default": null,
+        "generated": null,
+        "identity": null,
+        "entityType": "columns"
+      }
+    },
+    {
+      "op": "create",
+      "row": {
+        "schema": "public",
+        "table": "agent_runs",
+        "name": "error",
+        "type": "text",
+        "typeSchema": null,
+        "notNull": false,
+        "dimensions": 0,
+        "default": null,
+        "generated": null,
+        "identity": null,
+        "entityType": "columns"
+      }
+    }
+  ]
+}

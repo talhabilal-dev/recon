@@ -1,0 +1,47 @@
+{
+  "type": "diff",
+  "version": "9",
+  "dialect": "postgres",
+  "id": "9dafb60a-2a59-4811-aecd-6a082f10a891",
+  "prevIds": [
+    "8282fec9-51e4-41e3-aeae-813fd3aeac8a"
+  ],
+  "footprints": [
+    {
+      "statementType": "add_column",
+      "statementTarget": [
+        "column",
+        "public",
+        "agent_runs",
+        "conversation_id"
+      ],
+      "writes": [
+        "s|col|public.agent_runs.conversation_id",
+        "n|col|public.agent_runs.conversation_id",
+        "e|col|public.agent_runs.conversation_id"
+      ],
+      "reads": [
+        "n|tbl|public.agent_runs",
+        "n|sch|public"
+      ]
+    }
+  ],
+  "deltas": [
+    {
+      "op": "create",
+      "row": {
+        "schema": "public",
+        "table": "agent_runs",
+        "name": "conversation_id",
+        "type": "text",
+        "typeSchema": null,
+        "notNull": false,
+        "dimensions": 0,
+        "default": null,
+        "generated": null,
+        "identity": null,
+        "entityType": "columns"
+      }
+    }
+  ]
+}
