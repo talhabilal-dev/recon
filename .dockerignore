@@ -1,0 +1,15 @@
+# Never bake secrets into an image.
+.env
+.env.*
+
+node_modules
+**/node_modules
+
+# Built inside the image.
+dist
+**/dist
+storage
+
+.commandcode
+.git
+*.log
